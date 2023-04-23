@@ -12,7 +12,14 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: Guid("b2900caa-ead0-4c24-ac05-815d7feff161")]
-[assembly: AssemblyVersion("5.0.0.0")]
-[assembly: AssemblyFileVersion("5.0.0.0")]
-[assembly: MelonInfo(typeof(AnkleSupport.Implementation), "Ankle-Support", "5.0.0", "WulfMarius, zeobviouslyfakeacc, Remodor")]
+[assembly: AssemblyVersion("6.0.0.0")]
+[assembly: AssemblyFileVersion("6.0.0.0")]
+[assembly: MelonInfo(typeof(AnkleSupport.Implementation), BuildInfo.ModName, BuildInfo.ModVersion, BuildInfo.ModAuthor)]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
+
+internal static class BuildInfo
+{
+    internal const string ModName = "Ankle-Support";
+    internal const string ModAuthor = "WulfMarius, zeobviouslyfakeacc, Remodor, JonAyling";
+    internal const string ModVersion = "6.0.0";
+}
